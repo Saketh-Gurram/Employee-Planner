@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply text-gray-900;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e9d5ff 25%, #dbeafe 50%, #cffafe 75%, #f0fdfa 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e9d5ff 25%, #dbeafe 50%, #cffafe 75%, #f0fdfa 100%);
+  }
+}
+
+@layer components {
+  /* Primary Button - Gradient with glow effect */
+  .btn-primary {
+    @apply relative overflow-hidden;
+    @apply bg-gradient-to-r from-primary-600 via-primary-500 to-accent-600;
+    @apply text-white font-semibold py-2.5 px-6 rounded-xl;
+    @apply transition-all duration-300 ease-in-out;
+    @apply hover:shadow-lg hover:shadow-primary-500/50 hover:scale-[1.02];
+    @apply active:scale-[0.98];
+    @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  .btn-primary:hover::before {
+    opacity: 1;
+  }
+
+  /* Secondary Button - Glass effect */
+  .btn-secondary {
+    @apply bg-white/80 backdrop-blur-sm border-2 border-gray-200;
+    @apply hover:bg-white hover:border-primary-300 hover:shadow-md;
+    @apply text-gray-700 hover:text-primary-700 font-semibold;
+    @apply py-2.5 px-6 rounded-xl;
+    @apply transition-all duration-300 ease-in-out;
+    @apply hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  /* Modern Card with enhanced shadows and rounded corners */
+  .card {
+    @apply relative bg-white rounded-3xl p-8;
+    @apply border-2 border-white/60;
+    @apply transition-all duration-300 ease-in-out;
+    box-shadow:
+      0 10px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 15px -7px rgba(0, 0, 0, 0.05),
+      0 0 0 1px rgba(139, 92, 246, 0.05);
+  }
+
+  .card:hover {
+    @apply border-primary-200;
+    transform: translateY(-2px);
+    box-shadow:
+      0 20px 40px -5px rgba(139, 92, 246, 0.2),
+      0 10px 25px -7px rgba(6, 182, 212, 0.15),
+      0 0 0 1px rgba(139, 92, 246, 0.1);
+  }
+
+  /* Card with gradient accent */
+  .card-gradient {
+    @apply relative bg-white rounded-3xl p-8;
+    @apply transition-all duration-300 ease-in-out;
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(248, 246, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow:
+      0 15px 35px -5px rgba(139, 92, 246, 0.15),
+      0 10px 20px -7px rgba(6, 182, 212, 0.1),
+      0 0 0 1px rgba(139, 92, 246, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .card-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg,
+      rgba(139, 92, 246, 0.3),
+      rgba(6, 182, 212, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                  linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .card-gradient:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 25px 50px -5px rgba(139, 92, 246, 0.25),
+      0 15px 30px -7px rgba(6, 182, 212, 0.2),
+      0 0 0 1px rgba(139, 92, 246, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+  }
+
+  /* Feature Card - Enhanced with gradient border */
+  .feature-card {
+    @apply relative bg-white rounded-3xl p-6;
+    @apply transition-all duration-300 ease-in-out;
+    border: 2px solid rgba(226, 232, 240, 0.6);
+    box-shadow:
+      0 8px 20px -5px rgba(0, 0, 0, 0.08),
+      0 4px 10px -3px rgba(0, 0, 0, 0.04);
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow:
+      0 30px 60px -10px rgba(139, 92, 246, 0.3),
+      0 20px 40px -10px rgba(6, 182, 212, 0.2),
+      0 0 0 1px rgba(139, 92, 246, 0.1);
+  }
+
+  .feature-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg,
+      rgba(139, 92, 246, 0.05),
+      rgba(6, 182, 212, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  .feature-card:hover::after {
+    opacity: 1;
+  }
+
+  /* Input Field - Modern with enhanced shadows */
+  .input-field {
+    @apply block w-full rounded-2xl;
+    @apply border-2 border-gray-200 bg-white;
+    @apply px-5 py-3.5;
+    @apply text-gray-900 placeholder-gray-400;
+    @apply transition-all duration-200;
+    @apply hover:border-gray-300;
+    @apply sm:text-sm;
+    box-shadow:
+      0 2px 8px -2px rgba(0, 0, 0, 0.05),
+      inset 0 1px 2px rgba(0, 0, 0, 0.03);
+  }
+
+  .input-field:focus {
+    @apply bg-white border-primary-500;
+    outline: none;
+    box-shadow:
+      0 0 0 4px rgba(139, 92, 246, 0.1),
+      0 8px 20px -5px rgba(139, 92, 246, 0.15),
+      inset 0 1px 2px rgba(139, 92, 246, 0.05);
+  }
+
+  /* Textarea Field */
+  .textarea-field {
+    @apply input-field resize-none;
+    @apply min-h-[140px];
+    @apply leading-relaxed;
+  }
+
+  /* Badge - Modern pill style */
+  .badge {
+    @apply inline-flex items-center px-3 py-1;
+    @apply text-xs font-semibold rounded-full;
+    @apply transition-all duration-200;
+  }
+
+  .badge-primary {
+    @apply bg-primary-100 text-primary-700;
+    @apply border border-primary-200;
+  }
+
+  .badge-success {
+    @apply bg-success-100 text-success-700;
+    @apply border border-success-200;
+  }
+
+  .badge-warning {
+    @apply bg-warning-100 text-warning-700;
+    @apply border border-warning-200;
+  }
+
+  .badge-info {
+    @apply bg-info-100 text-info-700;
+    @apply border border-info-200;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  }
+
+  .gradient-text-ai {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  }
+
+  /* Animated Gradient Background */
+  .gradient-bg-animated {
+    background: linear-gradient(135deg,
+      rgba(139, 92, 246, 0.05) 0%,
+      rgba(6, 182, 212, 0.05) 50%,
+      rgba(59, 130, 246, 0.05) 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Loading Spinner */
+  .spinner {
+    @apply animate-spin rounded-full;
+    @apply border-2 border-gray-200;
+    @apply border-t-primary-600;
+  }
+
+  /* Glassmorphism Container */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    @apply border border-white/20 rounded-2xl;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  }
+
+  /* Hero Section Background */
+  .hero-gradient {
+    background: linear-gradient(180deg,
+      rgba(248, 250, 252, 1) 0%,
+      rgba(241, 245, 249, 1) 100%);
+    position: relative;
+  }
+
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.08) 0, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.08) 0, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(6, 182, 212, 0.08) 0, transparent 50%);
+    pointer-events: none;
+  }
+
+  /* Smooth transitions for all interactive elements */
+  button, a, input, textarea, select {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  /* Animated blob background */
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
