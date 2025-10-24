@@ -1,0 +1,6 @@
+project_code,employee_id,role_in_project,allocation_percentage,start_date,end_date,actual_hours,hourly_rate_at_time,performance_rating,key_contributions
+PROJ001,EMP001,Frontend Lead,80,2022-01-15,2022-07-10,768,90.0,4.5,Led frontend architecture design
+PROJ001,EMP002,Backend Lead,70,2022-01-15,2022-07-10,672,110.0,4.8,Implemented scalable API design
+PROJ001,EMP003,UI Designer,60,2022-02-01,2022-06-01,480,75.0,4.3,Created user-centered design system
+PROJ002,EMP001,Frontend Dev,90,2022-08-01,2022-12-15,576,95.0,4.6,Built responsive dashboard components
+PROJ002,EMP002,Backend Dev,80,2022-08-01,2022-12-15,512,115.0,4.9,Optimized database performance

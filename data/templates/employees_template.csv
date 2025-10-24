@@ -1,0 +1,4 @@
+employee_id,name,email,department,title,seniority_level,cost_code,hourly_rate,annual_salary,location,timezone,availability_percentage,hire_date,is_active
+EMP001,John Doe,john.doe@company.com,Engineering,Senior Developer,Senior,ENG-001,95.0,120000,"San Francisco, CA",PST,90.0,2020-03-15,TRUE
+EMP002,Jane Smith,jane.smith@company.com,Engineering,Frontend Developer,Mid,ENG-002,75.0,95000,"Austin, TX",CST,100.0,2021-01-10,TRUE
+EMP003,Bob Johnson,bob.johnson@company.com,Design,UI/UX Designer,Senior,DES-001,80.0,105000,"Portland, OR",PST,85.0,2019-05-12,TRUE

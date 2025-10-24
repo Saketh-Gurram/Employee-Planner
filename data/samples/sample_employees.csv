@@ -1,0 +1,31 @@
+employee_id,name,email,department,title,seniority_level,cost_code,hourly_rate,annual_salary,location,timezone,availability_percentage,hire_date,is_active
+EMP001,Sarah Chen,sarah.chen@company.com,Engineering,Senior Frontend Developer,Senior,ENG-FE-001,95.0,120000,"San Francisco, CA",PST,90.0,2020-03-15,TRUE
+EMP002,Marcus Johnson,marcus.johnson@company.com,Engineering,Lead Backend Developer,Lead,ENG-BE-001,115.0,150000,"Austin, TX",CST,85.0,2018-07-22,TRUE
+EMP003,Elena Rodriguez,elena.rodriguez@company.com,Engineering,Mobile Developer,Mid,ENG-MOB-001,75.0,95000,"Miami, FL",EST,100.0,2021-01-10,TRUE
+EMP004,David Kim,david.kim@company.com,AI/ML,AI Engineer,Senior,AI-ENG-001,125.0,140000,"Seattle, WA",PST,80.0,2019-09-05,TRUE
+EMP005,Jennifer Walsh,jennifer.walsh@company.com,DevOps,DevOps Engineer,Mid,DEVOPS-001,85.0,110000,"Denver, CO",MST,95.0,2020-11-18,TRUE
+EMP006,Alex Thompson,alex.thompson@company.com,Design,UI/UX Designer,Senior,DES-UX-001,80.0,105000,"Portland, OR",PST,90.0,2019-05-12,TRUE
+EMP007,Robert Brown,robert.brown@company.com,Engineering,Junior Full Stack Developer,Junior,ENG-FS-001,45.0,70000,"Chicago, IL",CST,100.0,2022-08-01,TRUE
+EMP008,Lisa Anderson,lisa.anderson@company.com,QA,QA Engineer,Mid,QA-001,65.0,85000,"Boston, MA",EST,100.0,2021-06-14,TRUE
+EMP009,Michael Torres,michael.torres@company.com,Engineering,Principal Architect,Principal,ENG-ARCH-001,140.0,180000,"New York, NY",EST,75.0,2017-03-20,TRUE
+EMP010,Amanda Foster,amanda.foster@company.com,Product,Product Manager,Senior,PROD-001,90.0,135000,"Los Angeles, CA",PST,85.0,2020-01-08,TRUE
+EMP011,Kevin Zhang,kevin.zhang@company.com,Engineering,Senior Full Stack Developer,Senior,ENG-FS-002,105.0,130000,"Seattle, WA",PST,90.0,2019-11-20,TRUE
+EMP012,Rachel Green,rachel.green@company.com,Engineering,Mid Frontend Developer,Mid,ENG-FE-002,70.0,90000,"Austin, TX",CST,100.0,2021-03-15,TRUE
+EMP013,James Wilson,james.wilson@company.com,Engineering,Senior Backend Developer,Senior,ENG-BE-002,110.0,135000,"Boston, MA",EST,80.0,2018-12-10,TRUE
+EMP014,Priya Patel,priya.patel@company.com,AI/ML,Mid Data Scientist,Mid,AI-DS-001,85.0,105000,"San Francisco, CA",PST,95.0,2021-07-22,TRUE
+EMP015,Carlos Martinez,carlos.martinez@company.com,Engineering,Lead Full Stack Developer,Lead,ENG-FS-003,120.0,155000,"Miami, FL",EST,85.0,2017-09-14,TRUE
+EMP016,Sophia Lee,sophia.lee@company.com,Engineering,Junior Frontend Developer,Junior,ENG-FE-003,50.0,75000,"Portland, OR",PST,100.0,2023-01-10,TRUE
+EMP017,Mohammed Ali,mohammed.ali@company.com,DevOps,Senior DevOps Engineer,Senior,DEVOPS-002,100.0,125000,"Chicago, IL",CST,90.0,2019-04-18,TRUE
+EMP018,Emily Davis,emily.davis@company.com,Engineering,Senior iOS Developer,Senior,ENG-IOS-001,95.0,120000,"Los Angeles, CA",PST,85.0,2020-06-25,TRUE
+EMP019,Daniel Brown,daniel.brown@company.com,Engineering,Mid Backend Developer,Mid,ENG-BE-003,75.0,95000,"Denver, CO",MST,100.0,2021-11-03,TRUE
+EMP020,Olivia Taylor,olivia.taylor@company.com,QA,Senior QA Engineer,Senior,QA-002,80.0,100000,"New York, NY",EST,90.0,2019-08-12,TRUE
+EMP021,Ryan Murphy,ryan.murphy@company.com,Engineering,Junior Backend Developer,Junior,ENG-BE-004,48.0,72000,"Austin, TX",CST,100.0,2022-09-20,TRUE
+EMP022,Isabella Garcia,isabella.garcia@company.com,Design,Mid UI/UX Designer,Mid,DES-UX-002,65.0,82000,"San Francisco, CA",PST,95.0,2021-05-08,TRUE
+EMP023,Nathan Scott,nathan.scott@company.com,Engineering,Lead DevOps Engineer,Lead,DEVOPS-003,125.0,160000,"Seattle, WA",PST,80.0,2018-03-30,TRUE
+EMP024,Ava Robinson,ava.robinson@company.com,AI/ML,Senior ML Engineer,Senior,AI-ML-002,118.0,145000,"Boston, MA",EST,85.0,2019-10-15,TRUE
+EMP025,Lucas Wright,lucas.wright@company.com,Engineering,Mid Android Developer,Mid,ENG-AND-001,78.0,98000,"Chicago, IL",CST,95.0,2020-12-05,TRUE
+EMP026,Mia Thompson,mia.thompson@company.com,Product,Mid Product Manager,Mid,PROD-002,75.0,95000,"Portland, OR",PST,90.0,2021-08-18,TRUE
+EMP027,Ethan Clark,ethan.clark@company.com,Engineering,Principal Backend Engineer,Principal,ENG-BE-005,145.0,185000,"San Francisco, CA",PST,75.0,2016-11-22,TRUE
+EMP028,Chloe Martinez,chloe.martinez@company.com,QA,Lead QA Engineer,Lead,QA-003,95.0,120000,"Miami, FL",EST,85.0,2019-02-14,TRUE
+EMP029,Jackson Lee,jackson.lee@company.com,Engineering,Senior Data Engineer,Senior,DATA-ENG-001,110.0,135000,"New York, NY",EST,80.0,2018-07-08,TRUE
+EMP030,Zoe Anderson,zoe.anderson@company.com,Engineering,Mid Full Stack Developer,Mid,ENG-FS-004,72.0,92000,"Denver, CO",MST,100.0,2022-04-12,TRUE

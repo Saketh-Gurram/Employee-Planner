@@ -1,0 +1,7 @@
+employee_id,skill_name,proficiency_level,years_experience,is_primary_skill,certified,last_used
+EMP001,React,5,4.0,TRUE,FALSE,2023-10-01
+EMP001,TypeScript,4,3.0,FALSE,FALSE,2023-10-01
+EMP002,Python,5,6.0,TRUE,TRUE,2023-10-01
+EMP002,FastAPI,4,3.0,FALSE,FALSE,2023-10-01
+EMP003,UI/UX Design,5,6.0,TRUE,TRUE,2023-10-01
+EMP003,Figma,5,4.0,FALSE,FALSE,2023-10-01

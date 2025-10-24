@@ -1,0 +1,24 @@
+project_code,employee_id,role_in_project,allocation_percentage,start_date,end_date,actual_hours,hourly_rate_at_time,performance_rating,key_contributions
+PROJ001,EMP001,Frontend Lead,80,2022-01-15,2022-07-10,768,90.0,4.5,Led React Native architecture and component design
+PROJ001,EMP002,Backend Lead,70,2022-01-15,2022-07-10,672,110.0,4.8,Implemented scalable FastAPI microservices
+PROJ001,EMP003,Mobile Developer,100,2022-01-15,2022-07-10,960,70.0,4.3,Developed cross-platform mobile features
+PROJ001,EMP005,DevOps Engineer,40,2022-01-15,2022-07-10,384,80.0,4.6,Set up CI/CD pipeline and AWS infrastructure
+PROJ001,EMP008,QA Engineer,60,2022-02-01,2022-07-10,576,60.0,4.4,Comprehensive mobile testing across devices
+PROJ002,EMP001,Frontend Developer,90,2022-08-01,2022-12-15,576,95.0,4.6,Built responsive dashboard with data visualizations
+PROJ002,EMP002,Backend Developer,80,2022-08-01,2022-12-15,512,115.0,4.9,Optimized database queries and API performance
+PROJ002,EMP004,AI Engineer,100,2022-08-01,2022-12-15,640,120.0,4.8,Developed ML models for predictive analytics
+PROJ002,EMP008,QA Engineer,50,2022-08-01,2022-12-15,320,65.0,4.5,Automated testing for ML pipeline validation
+PROJ003,EMP001,Frontend Developer,100,2023-02-01,2023-04-01,320,95.0,4.7,Next.js development with CMS integration
+PROJ003,EMP006,UI/UX Designer,80,2023-02-01,2023-03-15,256,80.0,4.8,Complete design system and user experience
+PROJ003,EMP007,Junior Developer,60,2023-02-15,2023-04-01,192,40.0,4.2,Content migration and basic feature implementation
+PROJ004,EMP002,Lead Backend Developer,85,2021-06-01,2022-02-15,1088,110.0,4.7,Architected IoT data processing pipeline
+PROJ004,EMP001,Frontend Lead,75,2021-06-01,2022-02-15,960,85.0,4.5,Built real-time device monitoring dashboard
+PROJ004,EMP004,Data Engineer,90,2021-06-01,2022-02-15,1152,115.0,4.6,Implemented data analytics and ML models
+PROJ004,EMP005,DevOps Engineer,100,2021-06-01,2022-02-15,1280,75.0,4.8,Cloud infrastructure and container orchestration
+PROJ004,EMP009,Technical Architect,60,2021-06-01,2021-10-01,384,130.0,4.9,System architecture design and technical leadership
+PROJ004,EMP008,QA Engineer,70,2021-08-01,2022-02-15,672,60.0,4.3,IoT device testing and integration validation
+PROJ005,EMP001,Frontend Lead,85,2023-03-15,2023-08-10,680,95.0,4.6,HIPAA-compliant React interface development
+PROJ005,EMP002,Backend Lead,90,2023-03-15,2023-08-10,720,115.0,4.8,Secure Django backend with data encryption
+PROJ005,EMP005,DevOps Engineer,80,2023-03-15,2023-08-10,640,85.0,4.7,Compliant cloud infrastructure setup
+PROJ005,EMP006,UI/UX Designer,60,2023-03-15,2023-06-01,288,80.0,4.5,Healthcare-focused user experience design
+PROJ005,EMP008,QA Engineer,75,2023-04-01,2023-08-10,600,65.0,4.4,Security testing and compliance validation
