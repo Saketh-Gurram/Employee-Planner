@@ -87,7 +87,7 @@ employee_planner/
 ### 1. Clone/Download the Project
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Saketh-Gurram/Employee-Planner.git
 cd employee_planner
 ```
 
